@@ -8,8 +8,8 @@ checklogged();
 document.getElementById("login-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const email = document.getElementById("email-input").Value;
-    const password = document.getElementById("password-input").Value;
+    const email = document.getElementById("email-input").value;
+    const password = document.getElementById("password-input").value;
     const checkSession = document.getElementById("session-check").checked;
 
     const account = getAccount(email);
@@ -35,14 +35,14 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
 document.getElementById("create-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const email = document.getElementById("email-create-input").Value;
-    const password = document.getElementById("password-create-input").Value;
+    const email = document.getElementById("email-create-input").value;
+    const password = document.getElementById("password-create-input").value;
 
     if(email.length < 5) {
-        alert("Preencha o campo com um e-mail válido.");
-        return;
+        alert("Prencha o campo com o E-mail valido.");
+        return
     }
-
+        
     if(password.length < 4) {
         alert("Prencha a senha com no minimo 4 digitos.");
         return;
