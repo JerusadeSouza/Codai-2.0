@@ -15,7 +15,7 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
     const account = getAccount(email);
 
     if(!account) {
-        alert("Opps! Verifique o usuário ou a senha.");
+        alert("Opps! Verifique o usuário ou a senha..");
         return;
     }
 
