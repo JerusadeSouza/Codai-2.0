@@ -7,7 +7,7 @@ let data = {
 };
 
 document.getElementById("button-logout").addEventListener("click", logout);
-document.getElementById("transaction-button").addEventListener("click", function() {
+document.getElementById("transaction-button").addEventListener("click", function () {
     window.location.href = "transactions.html"
 });
 
@@ -124,7 +124,7 @@ function getCashOut() {
             cashInhtml += `
             <div class="row mb-4">
                 <div class="col-12">
-                    <h3 class="fs-2">R$ ${cashIn[index].value,tofixed(2)}</h3>
+                    <h3 class="fs-2">R$ ${cashIn[index].value, tofixed(2)}</h3>
                     <div class="container p-0">
                         <div class="row">
                             <div class="col-12 col-md-8">
@@ -149,9 +149,9 @@ function getTotal() {
     let total = 0;
 
     transactions.forEach((item) => {
-        if(item.type === "1") {
+        if (item.type === "1") {
             total += item.value;
-        }else {
+        } else {
             total -= item.value;
         }
     });
